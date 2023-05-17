@@ -1,17 +1,26 @@
 package pengguna;
 
-public class Mhs {
+
+public class Mhs extends User{
     private String Nama ;
     private String Nim ;
     private int Smt ;
-    public String Username ;
-    public String Password ;
+    
 
-    public Mhs (String arg_Username, String arg_Password){
-        this.Username = arg_Username;
-        this.Password = arg_Password;
+    public Mhs(String arg_username, String arg_password){
+        this.username = arg_username;
+        this.password = arg_password;
 
     }
+
+    public String getUsername(){
+        return super.username;
+    }
+    
+    public String getPassword() {
+        return super.password;
+    }
+    
     
     public void setNama(String Nama){
         this.Nama = Nama;
@@ -36,12 +45,4 @@ public class Mhs {
     public int getSmt(){
         return this.Smt;
     }
-
-    public String getUsername(){
-        return this.Username;
-    }
-
-    public String getPassword(){
-        return this.Password;
-}
 }
